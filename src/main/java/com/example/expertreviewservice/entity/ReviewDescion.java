@@ -1,0 +1,4 @@
+package com.example.expertreviewservice.entity;
+
+public class ReviewDescion {
+}
