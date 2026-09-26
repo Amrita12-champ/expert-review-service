@@ -1,4 +1,7 @@
 package com.example.expertreviewservice.serviceimpl;
 
-public class ExpertReviewServiceImpl {
+import com.example.expertreviewservice.service.ExpertReviewService;
+
+public class ExpertReviewServiceImpl implements ExpertReviewService {
+
 }
