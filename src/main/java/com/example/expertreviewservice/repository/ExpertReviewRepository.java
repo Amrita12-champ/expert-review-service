@@ -1,4 +1,4 @@
 package com.example.expertreviewservice.repository;
 
-public class ReviewCaseRepository {
+public interface ExpertReviewRepository {
 }
