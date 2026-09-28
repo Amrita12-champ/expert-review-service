@@ -1,6 +1,7 @@
 package com.example.expertreviewservice.serviceimpl;
 
 import com.example.expertreviewservice.entity.ExpertReview;
+import com.example.expertreviewservice.exception.ResourceNotFoundException;
 import com.example.expertreviewservice.repository.ExpertReviewRepository;
 import com.example.expertreviewservice.service.ExpertReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ public class ExpertReviewServiceImpl implements ExpertReviewService {
 
     @Override
     public ExpertReview getReviewById(String reviewId) {
-        return expertReviewRepository.findById(reviewId).orElseThrow(()->new RuntimeException("Review not found"));
+        return expertReviewRepository.findById(reviewId).orElseThrow(()->new ResourceNotFoundException("Review not found"));
 
     }
 
