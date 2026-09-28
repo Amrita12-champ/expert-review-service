@@ -11,5 +11,5 @@ public interface ExpertReviewService {
     ExpertReview getReviewById(String reviewId);
     List<ExpertReview> getAllReviews();
     List<ExpertReview>getReviewByStatus(String status);
-    ExpertReviewRepository updateReviewStatus(String reviwId, String status, String description);
+    ExpertReview updateReviewStatus(String reviwId, String status, String description);
 }

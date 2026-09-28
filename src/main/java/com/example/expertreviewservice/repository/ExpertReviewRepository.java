@@ -9,6 +9,6 @@ public interface ExpertReviewRepository extends JpaRepository<ExpertReview, Stri
 //    List<ExpertReview> findByExpertId(String expertId);
 //    List<ExpertReview> findbyStatus(String status);
 //    List<ExpertReview> findByDiagnosisId(String diagnosisId);
-
+List<ExpertReview> findByStatus(String status);
 
 }
